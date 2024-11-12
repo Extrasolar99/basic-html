@@ -7,7 +7,53 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <h1>Hello, World!</h1>
+    <div class="container">
+        <div class="input-container">
+            <label for="nameInput">Name:</label>
+            <input type="text" id="nameInput" placeholder="Enter your name">
+            <button id="greetButton">Greet</button>
+        </div>
+        <div class="result-container">
+            <p id="greetingMessage"><strong>Name:</strong> <span id="nameDisplay"></span></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="example-container">
+            <label for="ageInput">Age:</label>
+            <input type="number" id="ageInput" placeholder="Enter your age">
+            <button id="ageButton">Submit Age</button>
+        </div>
+        <div class="result-container">
+            <p id="ageMessage"><strong>Age in 7 years:</strong> <span id="ageDisplay"></span></p>
+        </div>
+    </div>
+    <div class="container">
+        <div class="calculator-container">
+            <input type="text" id="calcDisplay" disabled>
+            <div class="calc-grid">
+                <button class="calc-button" data-value="7">7</button>
+                <button class="calc-button" data-value="8">8</button>
+                <button class="calc-button" data-value="9">9</button>
+                <button class="calc-button" data-value="/">/</button>
+                <button class="calc-button" data-value="4">4</button>
+                <button class="calc-button" data-value="5">5</button>
+                <button class="calc-button" data-value="6">6</button>
+                <button class="calc-button" data-value="*">*</button>
+                <button class="calc-button" data-value="1">1</button>
+                <button class="calc-button" data-value="2">2</button>
+                <button class="calc-button" data-value="3">3</button>
+                <button class="calc-button" data-value="-">-</button>
+                <button class="calc-button" data-value="0">0</button>
+                <button class="calc-button" data-value=".">.</button>
+                <button class="calc-button" data-value="=">=</button>
+                <button class="calc-button" data-value="+">+</button>
+                <button class="calc-button" data-value="C">C</button>
+            </div>
+        </div>
+        <div class="result-container">
+            <p id="calcResult"><strong>Result:</strong> <span id="resultDisplay"></span></p>
+        </div>
+    </div>
     <script src="script.js"></script>
 </body>
 </html>
